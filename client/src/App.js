@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // eslint-disable-next-line
+  Link  
 } from "react-router-dom"; 
 
 

@@ -5,14 +5,21 @@ import axios from 'axios';
      
     
     useEffect(() => {
-        axios.get('api/hello')      //endpoint. getRequest를 server 즉 index.js로 보내질 것
-        .then(response => console.log(response.data))   //server 에서 돌아온 response를 콘솔창에 출력해봄
+        axios.get('/api/hello')      //endpoint. getRequest를 server 즉 index.js로 보내질 것
+        .then(response => {console.log(response)})   //server 에서 돌아온 response를 콘솔창에 출력해봄
     }, [])
     
     
     return(
-         <div>
-          LandingPage
+         <div style={{
+             display: 'flex', justifyContent: 'center', alignItems: 'center',
+             width: '100%', height: '100vh'
+         }}>
+          
+          <h2> 시작 페이지 </h2>
+          
+
+
          </div>
      )
  }
