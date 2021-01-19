@@ -12,8 +12,8 @@ function LoginPage(props) {     //파라미터로 props 넣어줘야함! 로그�
 
     const dispatch = useDispatch();
 
-    const [Email, setEmail] = React.useState(" ")
-    const [Password, setPassword] = React.useState(" ")
+    const [Email, setEmail] = React.useState("")
+    const [Password, setPassword] = React.useState("")
 
     const onEmailHandler = (event) => {
         setEmail(event.currentTarget.value)
