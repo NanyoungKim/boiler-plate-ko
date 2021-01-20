@@ -9,10 +9,10 @@ function RegisterPage(props) {
 
     const dispatch = useDispatch();
 
-    const [Email, setEmail] = React.useState(" ")
-    const [Password, setPassword] = React.useState(" ")
-    const [Name, setName] = React.useState(" ")
-    const [ConfirmPassword, setConfirmPassword] = React.useState(" ")
+    const [Email, setEmail] = React.useState("")
+    const [Password, setPassword] = React.useState("")
+    const [Name, setName] = React.useState("")
+    const [ConfirmPassword, setConfirmPassword] = React.useState("")
 
     const onEmailHandler = (event) => {
         setEmail(event.currentTarget.value)

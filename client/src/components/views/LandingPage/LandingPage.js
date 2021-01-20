@@ -1,6 +1,6 @@
  import React, {useEffect} from 'react'
 import axios from 'axios';
-
+import {withRouter } from 'react-router-dom'
  function LandingPage(props){//Functional Component 만들기
      
     
@@ -40,4 +40,4 @@ import axios from 'axios';
      )
  }
 
- export default LandingPage
+ export default withRouter(LandingPage)
